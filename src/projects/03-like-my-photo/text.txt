@@ -1,0 +1,4 @@
+Mini Project = Like My Photo App 
+
+This project includes the design and implementation of simple React App named like-my-photo
+---> The App constitutes the design of a card. the card consists of header section, an image section and a footer section
