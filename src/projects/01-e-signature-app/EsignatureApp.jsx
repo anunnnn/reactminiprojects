@@ -33,13 +33,12 @@ export default function EsignatureApp() {
       <Title classes = {'title'} text = { !name ? "Your Signatur" : name }/>
       <Title classes = {'title-main mb-4'} text = { !date ? "Select a Date" : date }/>
       <p>
-        This is a simple e-signature app that allows users to sign documents electronically. 
-        The app uses React for the frontend and Firebase for the backend. Users can create an account, 
-        upload documents, and sign them electronically. The app also allows users to view their signed 
-        documents and download them as PDFs.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sunt dolorum et fugit voluptatem 
-        labore, necessitatibus tempora, beatae, recusandae error illo explicabo nostrum! Iusto perspiciatis 
-        incidunt a accusantium voluptate! Doloremque.
+        This is a simple signature app that displays the name and date entered.
+        The EsignatureApp component uses the useState hook to handle changes in the inputfields.
+        It captures the user's name and selected date dynamically through form inputs.
+        On submission, the entered details are displayed as a digital signature preview.
+        Basic form validation can be added to ensure both fields are filled before displaying the
+        signature.The app provides a clean and minimal UI for ease of use.
       </p>
 
       <footer className = 'd-flex' style ={{ 
