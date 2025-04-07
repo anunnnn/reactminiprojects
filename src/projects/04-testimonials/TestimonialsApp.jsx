@@ -13,26 +13,22 @@ export default function TestimonialsApp() {
   const [ testimonials, setTestimonials ] = useState('');
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch(`https://jsonplaceholder.typicode.com/posts/${testimonials}`)
       .then(response => response.json())
-      .then(data => {
-        console.log(data);
-        setTestimonials(data);
-      })
-      .catch(error => console.error('Error fetching data:', error));
+      .then((json) => console.log(json))
+      
   }, [ testimonials ])
 
   return (
-    <div className='container container-fluid m-auto'>
+    <div className='container m-auto'>
 
       <Title text={'Testimonial App'} />
 
       <Button 
         text= {'Posts'} 
         btnClass='btn-info'
-        icon={ <BsFillFileEarmarkPostFill /> }
+        icon={ <BsFillFileEarmarkPostFill className='mr-1'/> }
         onClick={ () => setTestimonials ('Posts') } />{''}
-
       <Button 
         text= {'Users'} 
         btnClass='btn-info'
