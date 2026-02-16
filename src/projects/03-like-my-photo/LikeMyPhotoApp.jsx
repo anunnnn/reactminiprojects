@@ -11,9 +11,9 @@ import { useState } from 'react';
 
 export default function LikeMyPhotoApp() {
 
-    // let like = true;
+    const initialCount = Math.floor(Math.random() * 100);
     const [ like, setLike ] = useState(false);
-    const [ count, setCount ] = useState( 0 );
+    const [ count, setCount ] = useState( initialCount );
 
     const toggleLike = () => {
         if (!like) {
@@ -32,23 +32,39 @@ export default function LikeMyPhotoApp() {
         <Title text = { 'Like Photo App' } classes= {'title-main'} />
         <Title text = { `Likes ${count}` } classes = { 'subtitle' }/>
 
-        <div className = 'card card-dark m-auto shadow-lg'
-                style = {{ width : '300px',
-                            cursor : "pointer",}}
-                >
+        <div 
+            className = 'card card-dark m-auto shadow-sm'
+            style = {{ 
+                width : '300px',
+                cursor : "pointer",
+            }}>
+
             <div className = ' card-header fs-xl '>
-                <AiFillSmile />
+                <AiFillSmile className='mr-2' />
                 <small> DogyDog </small>
                 
             </div>
 
-            <img src = { HappyDog } style = {{ height : '300px' }} onDoubleClick = { toggleLike } />
+            <img 
+                src = { HappyDog } 
+                style = {{
+                    height : '300px',
+                    width : '100%',
+                    // objectFit : 'cover',
+                }} onDoubleClick = { toggleLike } />
 
-            <div className = 'card-footer fs-xl d-flex' style = {{ display : 'flex',
-                justifyContent : 'space-between' }}>
+            <div 
+                className = 'card-footer fs-xl d-flex' 
+                style = {{
+                    display : 'flex',
+                    justifyContent : 'space-between'
+                }}>
             
                 <AiOutlineComment /> {""}
-                { like ? (<AiFillHeart className = 'text-danger' onClick={ toggleLike } />) : (<AiOutlineHeart onClick={ toggleLike }/>)}
+                { like ? (
+                    <AiFillHeart className = 'text-danger' onClick={ toggleLike } />
+                    ) : (
+                    <AiOutlineHeart onClick={ toggleLike }/>)}
 
             </div>
 
