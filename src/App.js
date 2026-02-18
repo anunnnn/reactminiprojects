@@ -6,7 +6,8 @@ import React from 'react';
 // import TestimonialsApp from './projects/04-testimonials/TestimonialsApp';
 // import AlertApp from './projects/05-alerts-app/AlertApp';
 // import TemperatureControllerApp from './projects/06-temperature-controller-app/TemperatureControllerApp';
-import LightAndDarkModeApp from './projects/07-light-and-dark-mode-app/LightAndDarkModeApp';
+// import LightAndDarkModeApp from './projects/07-light-and-dark-mode-app/LightAndDarkModeApp';
+import SlideToUnlockApp from './projects/08-slide-to-unlock-app/SlideToUnlockApp';
 
 
 function App() {
@@ -20,7 +21,10 @@ function App() {
       {/* <TestimonialsApp /> */}
       {/* <AlertApp /> */}
       {/* <TemperatureControllerApp /> */}
-      <LightAndDarkModeApp />
+      {/* <LightAndDarkModeApp /> */}
+      {/* <SlideToUnlockApp /> */}
+
+      <SlideToUnlockApp />
 
     </div>
   );
