@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Button from './Button';
 
-export default function Alert({ type, message }) {
+export default function Alert({ type, message, delay=false, delayTime=4000 }) {
 
     const [showAlert, setShowAlert] = useState(true);
 
@@ -9,17 +10,23 @@ export default function Alert({ type, message }) {
         setTimeout(() => {
             setShowAlert(false);
         }, 300);
-    }
+    };
+
+    useEffect(() => {
+      delay && setTimeout(() => {
+        setShowAlert(false);
+      }, delayTime )
+    });
 
   return (
     showAlert && (
-      <div className={`alert alert-${type}`}>
+      <div className={`alert alert-${type} d-flex justify-content-between`}>
         <span className='fw-bold mr-1'>{message}</span>
-        <button 
+        <Button 
             type="button" 
             className="btn-close" 
             text='x'
-            onClick={closeAlert}></button>
+            onClick={closeAlert} />
       </div>
     )
   )

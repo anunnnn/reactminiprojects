@@ -8,7 +8,7 @@ export default function AlertApp() {
       <Title text={'Alert App'} classes={'title-main'} />
 
       <Alert type={'success'} message={'This is a success alert!'} />
-      
+      <Alert type={'info'} message={'This is an info alert!'} delay={true} />
     </div>
   )
 }
