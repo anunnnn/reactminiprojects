@@ -5,7 +5,9 @@ import React from 'react';
 // import LikeMyPhotoApp from './projects/03-like-my-photo/LikeMyPhotoApp';
 // import TestimonialsApp from './projects/04-testimonials/TestimonialsApp';
 // import AlertApp from './projects/05-alerts-app/AlertApp';
-import TemperatureControllerApp from './projects/06-temperature-controller-app/TemperatureControllerApp';
+// import TemperatureControllerApp from './projects/06-temperature-controller-app/TemperatureControllerApp';
+import LightAndDarkModeApp from './projects/07-light-and-dark-mode-app/LightAndDarkModeApp';
+
 
 function App() {
   return (
@@ -17,8 +19,8 @@ function App() {
       {/* <LikeMyPhotoApp /> */}
       {/* <TestimonialsApp /> */}
       {/* <AlertApp /> */}
-
-      <TemperatureControllerApp />
+      {/* <TemperatureControllerApp /> */}
+      <LightAndDarkModeApp />
 
     </div>
   );
