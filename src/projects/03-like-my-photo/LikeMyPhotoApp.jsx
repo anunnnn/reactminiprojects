@@ -47,6 +47,7 @@ export default function LikeMyPhotoApp() {
 
             <img 
                 src = { HappyDog } 
+                alt='Happy Dog'
                 style = {{
                     height : '300px',
                     width : '100%',

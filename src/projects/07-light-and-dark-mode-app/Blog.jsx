@@ -17,7 +17,7 @@ export default function Blog() {
         }}>
         <Button 
             text={theme ==='dark' ? 'Light Mode' : 'Dark Mode'} 
-            btnClass={`btn-sm ${theme === 'dark' && 'btn-light' || 'btn-dark'}`}
+            btnClass={`btn-sm ${(theme === 'dark' && 'btn-light') || 'btn-dark'}`}
             onClick={changeTheme} />
         </span>
 
