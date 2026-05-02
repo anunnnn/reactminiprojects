@@ -4,6 +4,7 @@ import { AiFillUnlock } from 'react-icons/ai';
 
 import LockScreenImg from './images/road.jpg';
 import HomeScreenImg from './images/beach.jpg';
+import Title from '../components/Title';
 
 export default function SlideToUnlockApp() {
 
@@ -33,30 +34,33 @@ export default function SlideToUnlockApp() {
 
 
   return (
-    <div className='container text-center d-flex flex-column border-20 shadow-md '
-      style={{
-        height: '70vh',
-        width: 340,
-        marginTop: '15vh',
-        border: '4px solid #000',
-        background: uiProps.uiBg      }}>
+    <div className="container">
+      <Title text={'Slide to Unlock App'} classes={'title-main text-center'}/>
+      <div className='container text-center d-flex flex-column border-20 shadow-md '
+        style={{
+          height: '70vh',
+          width: 340,
+          marginTop: '15vh',
+          border: '4px solid #000',
+          background: uiProps.uiBg      }}>
 
-        <h1 className='title' style={{ color: uiProps.uiColor }}>{uiProps.uiText}</h1>
-        {
-          showLockSlider
-          ?
-          (
-            <LockSlider 
-              handleInput={handleLockSliderInput} 
-              sliderValue={lockSliderValue} 
-              width={'250px'} />
-          )
-          :
-          (
-            <AiFillUnlock className='unlockIcon' />
-          )
-        }
-      
-    </div>
+          <h1 className='title' style={{ color: uiProps.uiColor }}>{uiProps.uiText}</h1>
+          {
+            showLockSlider
+            ?
+            (
+              <LockSlider 
+                handleInput={handleLockSliderInput} 
+                sliderValue={lockSliderValue} 
+                width={'250px'} />
+            )
+            :
+            (
+              <AiFillUnlock className='unlockIcon' />
+            )
+          }
+        
+      </div>
+      </div>
   )
 }
