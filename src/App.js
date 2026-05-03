@@ -7,8 +7,8 @@ import React from 'react';
 // import AlertApp from './projects/05-alerts-app/AlertApp';
 // import TemperatureControllerApp from './projects/06-temperature-controller-app/TemperatureControllerApp';
 // import LightAndDarkModeApp from './projects/07-light-and-dark-mode-app/LightAndDarkModeApp';
-import SlideToUnlockApp from './projects/08-slide-to-unlock-app/SlideToUnlockApp';
-
+// import SlideToUnlockApp from './projects/08-slide-to-unlock-app/SlideToUnlockApp';
+import SlideToGrowApp from './projects/09-sliderToGrow/SliderToGrowApp';
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
       {/* <LightAndDarkModeApp /> */}
       {/* <SlideToUnlockApp /> */}
 
-      <SlideToUnlockApp />
+      <SlideToGrowApp />
 
     </div>
   );
