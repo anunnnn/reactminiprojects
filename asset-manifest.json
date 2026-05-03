@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/reactminiprojects/static/css/main.250348cb.css",
-    "main.js": "/reactminiprojects/static/js/main.ef75712a.js",
+    "main.css": "/reactminiprojects/static/css/main.532d3780.css",
+    "main.js": "/reactminiprojects/static/js/main.3e46a690.js",
+    "static/media/happy_dog.jpg": "/reactminiprojects/static/media/happy_dog.5f4afc6ab76f1f237cb9.jpg",
+    "static/media/road.jpg": "/reactminiprojects/static/media/road.58a6e1ab8faa9611b6cc.jpg",
+    "static/media/beach.jpg": "/reactminiprojects/static/media/beach.2485e82d8669845497b9.jpg",
     "index.html": "/reactminiprojects/index.html",
-    "main.250348cb.css.map": "/reactminiprojects/static/css/main.250348cb.css.map",
-    "main.ef75712a.js.map": "/reactminiprojects/static/js/main.ef75712a.js.map"
+    "main.532d3780.css.map": "/reactminiprojects/static/css/main.532d3780.css.map",
+    "main.3e46a690.js.map": "/reactminiprojects/static/js/main.3e46a690.js.map"
   },
   "entrypoints": [
-    "static/css/main.250348cb.css",
-    "static/js/main.ef75712a.js"
+    "static/css/main.532d3780.css",
+    "static/js/main.3e46a690.js"
   ]
 }
