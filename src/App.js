@@ -1,7 +1,8 @@
 import './App.css';
 import React from 'react';
 
-import Homepage from './projects/00-homepage/Homepage';
+// import Homepage from './projects/00-homepage/Homepage';
+import HiddenSearchBarApp from './projects/10-hiidden-search-bar/HiddenSearchBarApp';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       {/* <SlideToUnlockApp /> */}
       {/* <SlideToGrowApp /> */}
 
-      <Homepage />
+      {/* <Homepage /> */}
+
+      <HiddenSearchBarApp />
 
     </div>
   );
